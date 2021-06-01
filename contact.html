@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennett University</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png"></a>
+            <div class="navbar" id="navLinks">
+                <i id="ballu" class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">ContactUs</a></li>
+                </ul>
+            </div>
+            <i id="gullu" class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.836770367425!2d77.5841978!3d28.4506465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ba6bedc9a2b537f!2sBennett%20University%20(Times%20of%20India%20Group)!5e0!3m2!1sen!2sin!4v1622450661350!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span><h5>
+                        Bennett university
+                    </h5>
+                    <p>Plot Nos 8-11, TechZone 2, Greater Noida, Uttar Pradesh 201310
+                        Bennett University (Times of India Group), address</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span><h5>
+                        +91 7999121511
+                    </h5>
+                    <p>Monday to Saturday , 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span><h5>
+                        jain85280@gmail.com
+                    </h5>
+                    <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col" id="kedarnath">
+                <form action="">
+                    <input name="name" type="text" placeholder="Enter Your Name">
+                    <input name="email" type="email" placeholder="Enter your email address">
+                    <input name="subject" type="text" placeholder="Enter your Subject">
+                    <textarea name="message" rows="8" placeholder="Message" required></textarea>
+                    <button class="btn-6">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="end">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, quo praesentium! <br>Sed excepturi repellendus non magni rerum corrupti dicta vero!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Chirag Jain</p>
+    </section>
+
+
+    <!-- Javascript -->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+
+        function HideMenu() {
+            navLinks.style.left = "-200px"
+        }
+    </script>
+</body>
+
+</html>

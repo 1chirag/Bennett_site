@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennett University</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png"></a>
+            <div class="navbar" id="navLinks">
+                <i id="ballu" class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">ContactUs</a></li>
+                </ul>
+            </div>
+            <i id="gullu" class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the worlds largest univeristy</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni maiores molestiae dolores blanditiis voluptates quis totam unde vel eaque sint voluptatem et laboriosam iusto, consequuntur laudantium quia quos dignissimos cupiditate, quisquam
+                    odio fugiat! Accusamus libero esse nobis natus sed?</p>
+                <a href="">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="./images/1.1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="end">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, quo praesentium! <br>Sed excepturi repellendus non magni rerum corrupti dicta vero!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Chirag Jain</p>
+    </section>
+
+    <!-- Javascript -->
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu() {
+            navLinks.style.left = "0";
+        }
+
+        function HideMenu() {
+            navLinks.style.left = "-200px"
+        }
+    </script>
+</body>
+
+</html>
